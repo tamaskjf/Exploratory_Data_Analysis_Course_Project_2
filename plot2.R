@@ -14,7 +14,7 @@ totEm_Baltimore <- summarySCC %>% filter(fips == 24510) %>% select(Emissions, ye
 totEm_Baltimore
 
 ## Making a plot and saving to a PNG file
-barplot(Total_Em_Baltimore ~ year, data = totEm_Baltimore, xlab = "Year", ylab = "Total Emissions of PM2.5 in tons in Baltimore", main = "Total Emissions of PM2.5 in Baltimore (1999-2008)", col = "darkgreen", ylim = c(0, 3500))
+barplot(Total_Em_Baltimore ~ year, data = totEm_Baltimore, xlab = "Year", ylab = "Total Emissions of PM2.5 in tons in Baltimore City", main = "Total Emissions of PM2.5 in Baltimore City (1999-2008)", col = "darkgreen", ylim = c(0, 3500))
 dev.copy(png, filename = "plot2.png")
 dev.off()
 

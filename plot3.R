@@ -24,7 +24,8 @@ totEm_Baltimore_type
 g <- ggplot(totEm_Baltimore_type, aes(x = factor(year), y = Total_Em_Baltimore, fill = type)) + 
   geom_bar(stat = "identity") +
   facet_grid (. ~ type) + 
-  labs(x = "Year", y = "Total Emissions of PM2.5 in tons", title = "Total Emissions of PM2.5 in tons in Baltimore by type (1999-2008)") +
+  labs(x = "Year", y = "Total Emissions of PM2.5 in tons", title = "Total Emissions of PM2.5 in tons \nin Baltimore City by type (1999-2008)") +
+  theme(plot.title = element_text(hjust = 0.5)) +
   ggsave("plot3.png")
 print(g)
 

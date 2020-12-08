@@ -59,4 +59,3 @@ if (BA_Change > LA_Change) {
 }
 
 ## Answer: The change of total emissions of PM2.5 from 1999 to 2008 is greater in Los Angeles County than in Baltimore City.
-
